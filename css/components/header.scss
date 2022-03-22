@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    min-width: auto;
+}
+
+.menu{
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-top: 5px;
+
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+
+    &__item{
+        margin-right: 27px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+    }
+}
+
+.contacts__phone{
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+}
+
+.contacts__icon-elem{
+    width: 14px;
+    height: 14px;
+    margin-right: 15px;
+}
+

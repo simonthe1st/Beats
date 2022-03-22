@@ -1,0 +1,52 @@
+.form{
+    display: flex;
+
+    &__col{
+        flex: 1;
+        margin-right: 20px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__row{
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &__block{
+        flex: 1;
+        margin-right: 20px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__input{
+        width: 100%;
+        padding: 18px 11px;
+        border: solid 3px transparent;
+        border-radius: 3px;
+
+        &--textarea{
+            height: 100px;
+            resize: none;
+            width: 450px;
+            height: 150px;
+        }
+
+        &:focus{
+            border-color: $red;
+            outline: none;
+        }
+        
+    }
+
+   
+
+    &__controls{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,41 @@
+.hero {
+    background-color: #f5f5f5;
+    height: 100vh;
+    min-height: 650px;
+    font-size: 18px;
+    position: relative;
+    
+    &:before{
+        position: absolute;
+        bottom: -30px;
+        right: 12%;
+        content: url(../img/Rectangle.svg);
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 24px 0 70px;
+        background: url("../img/ellipse.svg") right center / 50% auto no-repeat;
+    }
+
+    &__title-section{
+        width: 40%;
+    }
+
+    &__main-title{
+        font-size: 48px;
+        line-height: 1.1;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__title-desc{
+        font-size: 21px;
+        margin-bottom: 54px;
+        padding-right: 10%;
+        line-height: 1.42;
+    }
+}

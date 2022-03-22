@@ -1,0 +1,14 @@
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature__icon {
+  width: 40px;
+  margin-right: 7px;
+}
+
+.feature__text {
+  min-width: 115px;
+}
