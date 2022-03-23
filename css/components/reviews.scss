@@ -1,5 +1,12 @@
 .reviews{
-    
+    position: relative;
+
+    &:before{
+        content: url(../img/Ellipse-gray.svg);
+        position: absolute;
+        bottom: -3%;
+        left: 5%;
+    }
     
     &__display{
         background: #F8FAF9;

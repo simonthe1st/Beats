@@ -1,5 +1,16 @@
 .benefits{
-    display: flex;
+    position: relative;
+
+    &:before{
+        content: url(../img/vector-red.svg);
+        position: absolute;
+        bottom: -3%;
+        left: 5%;
+    }
+
+    &__list{
+        display: flex;
+    }
 
     &__item{
         flex: 1;
@@ -26,4 +37,5 @@
             }
         }
     }
+
 }

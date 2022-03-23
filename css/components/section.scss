@@ -4,13 +4,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
 
-    &__title{
-        font-size: 48px;
-        font-weight: bold;
-        margin-bottom: 60px;
-        text-align: center;
-        text-transform: uppercase;
-    }
+.title{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
 }
 

@@ -1,9 +1,0 @@
-.benefits-section {
-  position: relative;
-}
-.benefits-section:before {
-  content: url(./img/vector-red.svg);
-  position: absolute;
-  bottom: -3%;
-  left: 5%;
-}

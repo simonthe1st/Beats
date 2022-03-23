@@ -240,7 +240,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.section__title {
+
+.title {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 60px;
@@ -260,6 +261,15 @@ img {
 }
 
 .benefits {
+  position: relative;
+}
+.benefits:before {
+  content: url(../img/vector-red.svg);
+  position: absolute;
+  bottom: -3%;
+  left: 5%;
+}
+.benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,16 +332,15 @@ img {
   line-height: 1.1;
 }
 
-.benefits-section {
+.reviews {
   position: relative;
 }
-.benefits-section:before {
-  content: url(../img/vector-red.svg);
+.reviews:before {
+  content: url(../img/Ellipse-gray.svg);
   position: absolute;
   bottom: -3%;
   left: 5%;
 }
-
 .reviews__display {
   background: #F8FAF9;
   padding: 50px 45px 34px;
@@ -427,17 +436,7 @@ img {
      object-fit: cover;
 }
 
-.reviews-section {
-  position: relative;
-}
-.reviews-section:before {
-  content: url(../img/Ellipse-gray.svg);
-  position: absolute;
-  bottom: -3%;
-  left: 5%;
-}
-
-.order-section {
+.order {
   background: #181818;
   color: #fff;
 }
