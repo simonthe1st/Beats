@@ -2,12 +2,16 @@
     text-align: center;
 
     &__title{
-        margin-bottom: 8px;
+        margin-bottom: rem(8px);
     }
 
     &__subtitle{
         padding: 0 26%;
-        margin-bottom: 58px;
+        margin-bottom: rem(58px);
+
+        @include phones {
+            padding: 0 4%;
+        }
     }
 }
 

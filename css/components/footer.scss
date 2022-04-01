@@ -1,0 +1,54 @@
+.address{
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
+    font-style: normal;
+
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(23px) 0;
+    background: #fff;
+    
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include phones {
+            flex-direction: column;
+        }
+    }
+
+    &__contacts{
+        padding: 1rem;
+
+        @include phones {
+            
+        }
+    }
+
+}
+
+.social{
+    display: inline-flex;
+    padding-top: 1rem;
+
+    &__item{
+        margin-right: rem(10px);
+    }
+
+    &__item-elem{
+        width: rem(30px);
+        height: rem(30px);
+        color: #B3B3B3;
+        transition: 0.3s;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}

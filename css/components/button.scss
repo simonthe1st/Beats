@@ -1,13 +1,18 @@
 .button{
     font-weight: bold;
-    padding: 23px 42px;
+    padding: rem(23px) rem(42px);
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1;
     text-decoration: none;
     border: none;
     background: $red;
     color: #fff;
+
+    @include phones {
+        padding: 1.5375rem 2.915rem;
+        font-size: 1.3rem;
+    }
 
     &:hover{
         background: $hover-red;
@@ -17,7 +22,7 @@
         background: transparent;
         color: #fff;
         text-transform: none;
-        padding: 12px;
+        padding: rem(12px);
         font-weight: normal;
 
         &:hover{

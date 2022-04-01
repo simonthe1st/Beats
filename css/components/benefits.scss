@@ -1,15 +1,19 @@
 .benefits{
     position: relative;
-
+    
     &:before{
         content: url(../img/vector-red.svg);
         position: absolute;
         bottom: -3%;
         left: 5%;
     }
-
+    
     &__list{
         display: flex;
+        
+        @include phones {
+            flex-direction: column;
+        }
     }
 
     &__item{
@@ -17,12 +21,21 @@
         padding: 0 3%;
         position: relative;
 
+        @include phones {
+            padding: 0;
+            margin-bottom: rem(17px);
+        }
+
         &:before{
             content: url(../img/decor.svg);
             position: absolute;
-            top: 30px;
+            top: rem(30px);
             right: 0;
             transform: translate(50%);
+
+            @include phones {
+                display: none;
+            }
         }
 
         &:first-child{

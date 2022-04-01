@@ -2,14 +2,14 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-right: 25px;
-    padding: 7px 0;
+    margin-right: rem(25px);
+    padding: rem(7px) 0;
 
     &--checkbox{
-        padding-bottom: 50px;
+        padding-bottom: rem(50px);
         
         .radio__visible{
-            border-radius: 3px;
+            border-radius: rem(3px);
 
             &:before{
                 background: url(../img/galochka.svg) center center no-repeat;
@@ -28,17 +28,17 @@
     }
 
     &__visible{
-        width: 26px;
-        height: 26px;
+        width: rem(26px);
+        height: rem(26px);
         position: relative;
         border-radius: 50%;
         background: #fff;
-        margin-right: 10px;
+        margin-right: rem(10px);
 
         &:before{
             content: "";
-            width: 14px;
-            height: 14px;
+            width: rem(14px);
+            height: rem(14px);
             background: $red;
             border-radius: 50%;
             position: absolute;

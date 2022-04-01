@@ -1,0 +1,17 @@
+.address {
+  padding-left: 0.5rem;
+  font-size: rem(18px);
+  font-style: normal;
+}
+
+.footer__container {
+  height: 10vh;
+}
+.footer__contacts {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
