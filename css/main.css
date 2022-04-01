@@ -893,7 +893,7 @@ img {
 
 .map {
   height: 648px;
-  background: url(./../../img/map.png) center center no-repeat;
+  background: url(../img/map.png) center center no-repeat;
 }
 
 .address {
