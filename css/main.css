@@ -39,6 +39,7 @@ body {
   width: 95%;
   margin: 0 auto;
   position: relative;
+  max-width: 1100px;
 }
 
 h1,
