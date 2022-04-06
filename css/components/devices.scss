@@ -2,7 +2,7 @@
     background: #F8FAF9;
 
     &:before{
-        content: url(./../../img/quad.svg);
+        content: url(../img/quad.svg);
         position: absolute;
         bottom: -50%;
         right: 5%;
@@ -79,10 +79,10 @@
 
 
 #left {
-    content: url(./../../img/left.svg);
+    content: url(../img/left.svg);
     padding: 0 30px 0 0;
 }
 
 #right {
-    content: url(./../../img/right.svg);
+    content: url(../img/right.svg);
 }
