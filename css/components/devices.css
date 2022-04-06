@@ -1,0 +1,11 @@
+.devices {
+  position: relative;
+}
+.devices__display {
+  background: #F8FAF9;
+  padding: 65px 60px 120px;
+}
+.devices__img {
+  width: 452px;
+  height: 452px;
+}

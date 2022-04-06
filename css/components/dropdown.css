@@ -1,0 +1,10 @@
+.dropdown__button {
+  width: 90px;
+  height: 90px;
+  background: #9a9a9a;
+  border: none;
+  border-radius: 5px;
+}
+.dropdown__features {
+  display: none;
+}
