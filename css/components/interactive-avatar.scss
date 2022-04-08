@@ -5,8 +5,10 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
+    transition: .1s;
 
-    &--active{
+    &:hover{
         border-color: $red;
     }
 
@@ -25,4 +27,8 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.interactive-avatar.active{
+    border-color: $red;
 }

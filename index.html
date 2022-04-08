@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Beats</title>
 </head>
@@ -131,9 +133,11 @@
             <section class="devices section">
                 <div class="container">
                     <div class="devices__display">
-                        <a href="" class="arrow" id="left"></a>
-                        <div class="devices__display--inner">
-                            <ul class="device" id="items">
+                        <div class="devices__arrows">
+                            <a href="" class="devices__arrow devices__arrow--direction--prev" id="left"></a>
+                            <a href="" class="devices__arrow devices__arrow--direction--next" id="right"></a>
+                        </div>
+                        <ul class="device" id="items">
                                 <li class="devices__item">
                                     <div class="devices__img">
                                         <a href="" class="arrow" id="left-mob"></a>
@@ -197,10 +201,233 @@
                                         </div>    
                                     </div>
                                 </li>
+                                <li class="devices__item">
+                                    <div class="devices__img">
+                                        <a href="" class="arrow" id="left-mob"></a>
+                                        <img class="devices__img-elem" src="./img/device2.svg" alt="">
+                                        <a href="" class="arrow" id="right-mob"></a>
+                                    </div>
+                                    <div class="devices__content">
+                                        <div class="dropdown">
+                                            <button class="dropdown__button">
+                                                <svg class="dropdown__logo"><use xlink:href="devices-sprite.svg#dropdown"></use></svg>
+                                            </button>
+                                            <ul class="dropdown__features">
+                                                <li class="dropdown__content">
+                                                    <svg class="dropdown__img"><use xlink:href="devices-sprite.svg#bluetooth"></use></svg>
+                                                    <div class="dropdown__feature">Bluetooth</div>
+                                                    <div class="dropdown__value">4.0</div>
+                                                </li>
+                                                <li class="dropdown__content">
+                                                    <svg class="dropdown__img"><use xlink:href="devices-sprite.svg#distance"></use></svg>
+                                                    <div class="dropdown__feature">Дальность</div>
+                                                    <div class="dropdown__value">10 м</div>
+                                                </li>
+                                                <li class="dropdown__content">
+                                                    <svg class="dropdown__img"><use xlink:href="devices-sprite.svg#charger"></use></svg>
+                                                    <div class="dropdown__feature">Зарядка</div>
+                                                    <div class="dropdown__value">2 ч</div>
+                                                </li>
+                                                <li class="dropdown__content">
+                                                    <svg class="dropdown__img"><use xlink:href="devices-sprite.svg#weight"></use></svg>
+                                                    <div class="dropdown__feature">Вес</div>
+                                                    <div class="dropdown__value">215гр</div>
+                                                </li>
+                                                <li class="dropdown__content">
+                                                    <svg class="dropdown__img"><use xlink:href="devices-sprite.svg#garantee"></use></svg>
+                                                    <div class="dropdown__feature">Гарантия</div>
+                                                    <div class="dropdown__value">1 год</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="devices__title">beats solo pro. цвет «красный цитрус»</h3>
+                                        <div class="devices__desc">
+                                            <div class="devices__text">
+                                                <p>
+                                                    Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.
+                                                </p>
+                                            </div>
+                                            <ul class="devices__features">
+                                                <li class="devices__feature">
+                                                    <div class="devices__type-feat">Зарядка</div>
+                                                    <div class="devices__value-feat">2 часа</div>
+                                                </li>
+                                                <li class="devices__feature">
+                                                    <div class="devices__type-feat">Вес</div>
+                                                    <div class="devices__value-feat">215 грамм</div>
+                                                </li>
+                                            </ul>
+                                            <div class="devices__purchase">
+                                                <div class="devices__price">14 990 ₽</div>
+                                                <a href="" class="button">Заказать</a>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </li>
                             </ul>
-                        </div>
-                        <a href="" class="arrow" id="right"></a>
                     </div>
+                </div>
+            </section>
+            <section class="team section">
+                <div class="container">
+                    <div class="title">Команда</div>
+                    <ul class="team__list team--version--desktop">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/team-boris.svg" alt="" class="team__member-img">
+                            </div>
+                            <button class="team__title" type="button">
+                                <div class="team__title-name">Борис Федорович</div>
+                                <img src="./img/mem-info.svg" alt="" class="mem-info">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="occu">Главный технолог</div>
+                                    <div class="whatdo">
+                                        <p>
+                                            Отвечает за вкусовые качества и калорийность.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/team-alla.svg" alt="" class="team__member-img">
+                            </div>
+                            <button class="team__title" type="button">
+                                <div class="team__title-name">Алла Иванова</div>
+                                <img src="./img/mem-info.svg" alt="" class="mem-info">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="occu">Специалист по упаковке</div>
+                                    <div class="whatdo">
+                                        <p>
+                                            Автор запоминающегося стиля наших батончиков.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/team-kirill.svg" alt="" class="team__member-img">
+                            </div>
+                            <button class="team__title" type="button">
+                                <div class="team__title-name">Кирилл Матросов</div>
+                                <img src="./img/mem-info.svg" alt="" class="mem-info">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="occu">Оператор</div>
+                                    <div class="whatdo">
+                                        <p>
+                                            Разработал дизан наушников beats solo 3.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/team-mila.svg" alt="" class="team__member-img">
+                            </div>
+                            <button class="team__title" type="button">
+                                <div class="team__title-name">Мила Рыжкова</div>
+                                <img src="./img/mem-info.svg" alt="" class="mem-info">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="occu">PR, маркетинг</div>
+                                    <div class="whatdo">
+                                        <p>
+                                            По всем вопросам сотрудничества и рекламы писать только Миле. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- mobile -->
+                    <ul class="team team--version--mobile">
+                        <li class="team__item">
+                            <button class="team__title" type="button">
+                                <div class="team__title-name">Борис Федорович</div>
+                                <img src="./img/mem-info.svg" alt="" class="mem-info">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/team-boris.svg" alt="" class="team__member-img">
+                                    </div>
+                                    <div class="occu">Главный технолог</div>
+                                    <div class="whatdo">
+                                        <p>
+                                            Отвечает за вкусовые качества и калорийность.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">
+                                <div class="team__title-name">Анна Ивановна</div>
+                                <img src="./img/mem-info.svg" alt="" class="mem-info">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/team-alla.svg" alt="" class="team__member-img">
+                                    </div>
+                                    <div class="occu">Специалит по упоковке</div>
+                                    <div class="whatdo">
+                                        <p>
+                                            Автор запоминающегося стиля наших батончиков.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">
+                                <div class="team__title-name">Кирилл Матросов</div>
+                                <img src="./img/mem-info.svg" alt="" class="mem-info">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/team-kirill.svg" alt="" class="team__member-img">
+                                    </div>
+                                    <div class="occu">Оператор</div>
+                                    <div class="whatdo">
+                                        <p>
+                                            Разработал дизан наушников beats solo 3.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">
+                                <div class="team__title-name">Мила Рыжикова</div>
+                                <img src="./img/mem-info.svg" alt="" class="mem-info">
+                            </button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__member">
+                                        <img src="./img/team-mila.svg" alt="" class="team__member-img">
+                                    </div>
+                                    <div class="occu">PR, маркетинг</div>
+                                    <div class="whatdo">
+                                        <p>
+                                            По всем вопросам сотрудничества и рекламы писать только Миле. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="reviews section">
@@ -208,34 +435,64 @@
                     <h2 class="title">Отзывы</h2>
                     <div class="reviews__block">
                         <div class="reviews__display">
-                            <div class="reviews__display-inner">
-                                <div class="reviews__avatar">
-                                    <img src="./img/billie.svg" alt="" class="reviews__avatar-img">
-                                </div>
-                                <article class="reviews__content">
-                                    <h3 class="reviews__title">Отличный звук</h3>
-                                    <div class="reviews__text">
-                                        <p>
-                                            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. 
-                                        </p>
+                            <ul class="reviews__list">
+                                <li class="reviews__item active" data-linked-with="one">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/billie.svg" alt="" class="reviews__avatar-img">
                                     </div>
-                                    <div class="reviews__author">Билли Айлиш</div>
-                                </article>
-                            </div>
+                                    <article class="reviews__content">
+                                        <h3 class="reviews__title">Отличный звук</h3>
+                                        <div class="reviews__text">
+                                            <p>
+                                                Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. 
+                                            </p>
+                                        </div>
+                                        <div class="reviews__author">Билли Айлиш</div>
+                                    </article>
+                                </li>
+                                <li class="reviews__item" data-linked-with="two">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/vadim.svg" alt="" class="reviews__avatar-img">
+                                    </div>
+                                    <article class="reviews__content">
+                                        <h3 class="reviews__title">Крутой дизайн</h3>
+                                        <div class="reviews__text">
+                                            <p>
+                                                После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт. 
+                                            </p>
+                                        </div>
+                                        <div class="reviews__author">Вадим Грачев</div>
+                                    </article>
+                                </li>
+                                <li class="reviews__item" data-linked-with="three">
+                                    <div class="reviews__avatar">
+                                        <img src="./img/maria.svg" alt="" class="reviews__avatar-img">
+                                    </div>
+                                    <article class="reviews__content">
+                                        <h3 class="reviews__title">На долго хватает заряда</h3>
+                                        <div class="reviews__text">
+                                            <p>
+                                                Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                                            </p>
+                                        </div>
+                                        <div class="reviews__author">Мария Орлова</div>
+                                    </article>
+                                </li>
+                            </ul>
                         </div>
                         <ul class="reviews__switcher">
-                            <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                <a href="#" class="reviews__switcher-link">
+                            <li class="reviews__switcher-item interactive-avatar active">
+                                <a href="#" class="reviews__switcher-link" data-open="one">
                                     <img src="./img/billie.svg" alt="billie elish" class="interactive-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="reviews__switcher-link">
+                                <a href="#" class="reviews__switcher-link" data-open="two">
                                     <img src="./img/vadim.svg" alt="billie elish" class="interactive-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="reviews__switcher-link">
+                                <a href="#" class="reviews__switcher-link" data-open="three">
                                     <img src="./img/maria.svg" alt="billie elish" class="interactive-avatar__img">
                                 </a>
                             </li>
@@ -247,39 +504,40 @@
                 <div class="container">
                     <h2 class="title">закажите доставку</h2>
                     <form class="form">
+                        <input type="hidden" name="to" value="somewhere@mail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="street" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="home" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="part" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="flat" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="floor" class="form__input">
                                 </label>
                             </div>
                         </div>
@@ -287,7 +545,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea" ></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea" ></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -310,7 +568,7 @@
                                 </label>
                             </div>
                             <div class="form__buttons">
-                                <input type="submit" value="Заказать" class="button">
+                                <input type="submit" value="Заказать" class="button" id="submit">
                                 <input type="reset" value="Отчистить" class="button button--transparent">
                             </div>
                         </div>
@@ -362,10 +620,17 @@
             <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
+    <script src="form.js"></script>
     <script type="html/template" id="overlayTemplate">
         <a href="#" class="close"></a>
         <div class="modal">
-            <div class="modal__content">
+            <div class="modal__content-menu">
                 <a href="" class="modal__item">О нас</a>
                 <a href="" class="modal__item">Наушники</a>
                 <a href="" class="modal__item">Команда</a>
@@ -377,6 +642,22 @@
         </div>
     </script>
     <script src="modal.js"></script>
+    <script type="html/template-form" id="overlayTemplate-form">
+        <div id="modal" class="modal">
+            <div class="modal__container">
+                <div class="modal__content">
+                    Сообщение отправлено
+                </div>
+                <div class="modal__button-container">
+                    <a href="#" class="button app-close-modal">закрыть</a>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script src="acco.js"></script>
+    <script src="tabs.js"></script>
+    
+
     
 </body>
 </html>

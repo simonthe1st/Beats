@@ -169,38 +169,34 @@
 }
 
 
-
-#left {
-    content: url(../img/left.svg);
-
-    @include tablets {
-        display: none;
-    }
+.bx-wrapper{
+    box-shadow: none;
+    border: 0;
+    background: transparent;
 }
 
-#right {
-    content: url(../img/right.svg);
+.devices__arrow{
+    background: url(../img/right.svg);
+    background-size: contain;
+    display: block;
+    width: rem(13px);
+    height: 1.6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 
     @include tablets {
-        display: none;
+        height: 1.57rem;
+        top: 26%;
     }
-}
 
-#left-mob {
-    display: none;
-    
-    @include tablets {
-        content: url(../img/left.svg);
-        display: block;
+    &--direction--next{
+        right: 0;
     }
-}
 
-#right-mob {
-    display: none;
-    
-    @include tablets {
-        content: url(../img/right.svg);
-        display: block;
-        margin-left: -27px;
+    &--direction--prev{
+        left: 0;
+        transform: rotate(-180deg);
     }
 }
