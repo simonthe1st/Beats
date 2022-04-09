@@ -983,11 +983,6 @@ button {
   text-decoration: none;
 }
 
-.map {
-  height: 648px;
-  background: url(../img/map.png) center center no-repeat;
-}
-
 .address {
   padding-left: 0.5rem;
   font-size: 1.3rem;
@@ -999,7 +994,7 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1.4375rem 0;
+  padding: 1.0375rem 0;
   background: #fff;
 }
 .footer__container {
@@ -1457,35 +1452,15 @@ button {
   min-width: auto;
 }
 
-.overlay-form {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #313131;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 10000;
-  opacity: 0.998;
-}
-
 .modal {
-  position: relative;
+  display: none;
 }
 .modal.error-modal .modal__content {
   color: red;
 }
 .modal__container {
   background: #fff;
-  padding: 35px 60px;
+  padding: 17px 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1497,11 +1472,24 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 310px;
-  height: 175px;
+  height: 180px;
+  text-align: center;
 }
 .modal__content {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #000;
   padding-bottom: 25px;
   font-size: 18px;
+}
+
+.fancybox-content {
+  padding: 0 !important;
+}
+
+.fancybox-button {
+  display: none;
+}
+
+.input-error .form__input {
+  border-color: red;
 }

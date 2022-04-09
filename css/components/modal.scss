@@ -1,19 +1,6 @@
-.overlay-form {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #313131;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-    opacity: 0.998;
-  }
 
 .modal {
-    position: relative;
+    display: none;
 
     &.error-modal {
         .modal__content {
@@ -21,20 +8,34 @@
         }
     }
 
+
     &__container{
         background: #fff;
-        padding: 35px 60px;
+        padding: 17px 45px;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 310px;
-        height: 175px;
+        height: 180px;
+        text-align: center;
     }
 
     &__content{
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         color: #000;
         padding-bottom: 25px;
         font-size: 18px;
     }
+}
+
+.fancybox-content {
+    padding: 0 !important;
+}
+
+.fancybox-button {
+    display: none;
+}
+
+.input-error .form__input{
+    border-color: red;
 }

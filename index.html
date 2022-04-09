@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./css/main.css">
     <title>Beats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div class="wrapper">
@@ -568,7 +568,7 @@
                                 </label>
                             </div>
                             <div class="form__buttons">
-                                <input type="submit" value="Заказать" class="button" id="submit">
+                                <input type="submit" value="Заказать" class="button">
                                 <input type="reset" value="Отчистить" class="button button--transparent">
                             </div>
                         </div>
@@ -576,7 +576,7 @@
                 </div>
             </section>
             <section class="map section">
-                
+                    <div id="map" style="width: 100%; height: 100%"></div>
             </section>
             <footer class="footer">
                 <div class="container footer__container">
@@ -620,13 +620,19 @@
             <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
-    
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <a href="#" class="button app-submit-btn app-close-modal">закрыть</a>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="slider.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="jquery.fancybox.min.js"></script>
-    <script src="form.js"></script>
     <script type="html/template" id="overlayTemplate">
         <a href="#" class="close"></a>
         <div class="modal">
@@ -641,23 +647,13 @@
             </div>
         </div>
     </script>
-    <script src="modal.js"></script>
-    <script type="html/template-form" id="overlayTemplate-form">
-        <div id="modal" class="modal">
-            <div class="modal__container">
-                <div class="modal__content">
-                    Сообщение отправлено
-                </div>
-                <div class="modal__button-container">
-                    <a href="#" class="button app-close-modal">закрыть</a>
-                </div>
-            </div>
-        </div>
-    </script>
+    <script src="modal-menu.js"></script>
     <script src="acco.js"></script>
     <script src="tabs.js"></script>
-    
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="modal.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="map.js"></script>
 </body>
 </html>
