@@ -945,12 +945,12 @@ button {
   opacity: 0.998;
 }
 
-.modal {
+.modal-menu {
   position: relative;
 }
-.modal__content-menu {
-  width: 300px;
+.modal-menu__content {
   color: #fff;
+  width: 300px;
   margin: 0;
   font-size: 36px;
   display: -webkit-box;
@@ -965,7 +965,7 @@ button {
           align-items: center;
   opacity: 1;
 }
-.modal__item {
+.modal-menu__item {
   text-decoration: none;
   padding: 2px;
 }

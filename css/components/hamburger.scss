@@ -34,12 +34,12 @@
     opacity: 0.998;
   }
   
-  .modal {
+  .modal-menu {
     position: relative;
 
-    &__content-menu {
-      width: 300px;
+    &__content {
       color: #fff;
+      width: 300px;
       margin: 0;
       font-size: 36px;
       display: flex;
