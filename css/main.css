@@ -1807,6 +1807,7 @@ button {
 .products-menu__title {
   position: relative;
   width: 100px;
+  cursor: pointer;
 }
 .products-menu__title.gray-col {
   background-color: #999;
