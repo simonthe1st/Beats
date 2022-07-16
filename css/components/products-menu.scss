@@ -1,0 +1,74 @@
+.products-menu-section{
+    background: url(./../img/product-menu-img.jpg) center center/cover no-repeat;
+    position: relative;
+    color: #fff;
+    justify-content: flex-start;
+}
+
+.products-menu-section__title{
+    text-align: left;
+    padding: 170px 52px;
+
+    @include phones {
+        padding: 170px 12px;
+    }
+}
+
+.products-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.products-menu__item{
+    display: flex;
+}
+
+.products-menu__title{
+    position: relative;
+    width: 100px;
+    
+    &.gray-col{
+        background-color: #999;
+    }
+    &.black-col{
+        background-color: $black;
+    }
+    &.red-col{
+        background-color: $red;
+
+    }
+
+    @include phones {
+        width: 80px;
+    }
+    @media screen and (max-width: 365px){
+    width: 65px;
+    }
+}
+
+.products-menu__text{
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    bottom: 2.22rem;
+    font-size: rem(36px);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.products-menu__content{
+    background: rgba(47, 50, 52, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+}
+
+.products-menu__container{
+    padding: 40px 73px 45px 26px;
+}
+

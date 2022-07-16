@@ -10,7 +10,7 @@ openButton.addEventListener("click", e => {
 function createModal(content) {
     const overlayElement = document.createElement("div");
     overlayElement.classList.add("overlay");
-
+    
     const template = document.querySelector("#overlayTemplate");
 
     overlayElement.innerHTML = template.innerHTML
@@ -25,6 +25,6 @@ function createModal(content) {
         e.preventDefault();
         body.removeChild(overlayElement);
     })
-
+    
     return overlayElement;
 }
