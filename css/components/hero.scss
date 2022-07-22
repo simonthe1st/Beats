@@ -54,6 +54,11 @@
                     height: 23.1875rem;
                     margin-bottom: 1rem;
                 }
+
+                @media screen and (max-width: 380px){
+                    width: 19.1875rem;
+                    height: 19.1875rem;
+                }
             }
         }
     }
@@ -72,6 +77,11 @@
         @include phones {
             font-size: 2.3rem;
         }
+
+        @media screen and (max-width: 380px){
+            font-size: 2rem;
+            padding: 5% 9% 0;
+        }
     }
 
     &__title-desc{
@@ -86,6 +96,9 @@
         }
         @include phones {
             padding: 0 12%;
+        }
+        @media screen and (max-width: 380px){
+            font-size: 1.1125rem;
         }
     }
 

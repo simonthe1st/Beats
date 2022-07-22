@@ -22,6 +22,11 @@
             width: 8.8125rem;
             height: 8.875rem;
         }
+
+        @media screen and (max-width: 380px) {
+            width: 7.8125rem;
+            height: 7.875rem;
+        }
     }
 
     &__icon{
@@ -47,6 +52,9 @@
             font-size: 1.7rem;
             padding: 4% 0 0;
         }
+        @media screen and (max-width: 380px) {
+            font-size: 1.5rem;
+        }
     }
 
     &__desc{
@@ -56,6 +64,9 @@
 
         @include phones {
             padding: 0;
+        }
+        @media screen and (max-width: 380px) {
+            font-size: 0.9rem;
         }
     }
 }

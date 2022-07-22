@@ -3,6 +3,10 @@
 
     &__title{
         margin-bottom: rem(8px);
+
+        @media screen and (max-width: 380px) {
+            font-size: 2rem;
+        }
     }
 
     &__subtitle{
@@ -12,6 +16,10 @@
         @include phones {
             padding: 0 4%;
         }
+
+        @media screen and (max-width: 380px) {
+            font-size: 0.95rem;
+        }
+        
     }
 }
-

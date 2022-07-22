@@ -45,8 +45,8 @@
     @include phones {
         width: 80px;
     }
-    @media screen and (max-width: 365px){
-    width: 65px;
+    @media screen and (max-width: 400px){
+    width: 60px;
     }
 }
 
@@ -71,5 +71,9 @@
 
 .products-menu__container{
     padding: 40px 73px 45px 26px;
+
+    @include phones {
+        padding: 40px 20px 45px 26px;
+    }
 }
 
